@@ -14,9 +14,9 @@ function App() {
               <Redirect
               exact
               from="/github-page"
-              to="/"            
+              to="/home"            
             />
-                    <Route path = "/" exact component = {Home} />
+                    <Route path = "/home" exact component = {Home} />
                   
                   
                    
@@ -31,7 +31,7 @@ function App() {
 const Home = () => (
   <div>
     <div style = {{marginTop:"1.5%"}}>
-    <img src =  {ProfilePic} alt = "profile-picture"  width = "20%" />  
+    <img src =  {ProfilePic} alt = "Me"  width = "20%" />  
     <p>My names is Edwin.  I'm a <em>Dreamer</em> learning to code. </p>
     <p>I also teach math at Laredo College. </p>
 

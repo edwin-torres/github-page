@@ -15,7 +15,7 @@ function Nav() {
         <h3>LOGO</h3>
      
             <ul className = "nav-links">
-            <Link style = {navStyle} to = "/">
+            <Link style = {navStyle} to = "/home">
                             <li >Home</li>
                     </Link>
   
