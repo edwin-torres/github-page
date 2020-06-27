@@ -5,7 +5,7 @@ import Projects from './Projects/Projects';
 import Breakout from './Projects/BreakoutGame';
 import Chaos from './Projects/ChaosTriangle';
 
-import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+import {HashRouter  as Router, Switch, Route, Redirect} from 'react-router-dom';
  
 import './App.css';
 
@@ -18,7 +18,7 @@ function App() {
               <Switch>
               <Redirect
               exact
-              from="/github-page"
+              from="/"
               to="/home"            
             />
                     <Route path = "/home" exact component = {Home} />
