@@ -1,7 +1,12 @@
 import React from 'react';
 import Nav from './Nav';
+import About from './About';
+import Projects from './Projects/Projects';
+import Breakout from './Projects/BreakoutGame';
+import Chaos from './Projects/ChaosTriangle';
+
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
-import ProfilePic from './images/Edwin.jpg';
+ 
 import './App.css';
 
 function App() {
@@ -17,7 +22,10 @@ function App() {
               to="/home"            
             />
                     <Route path = "/home" exact component = {Home} />
-                  
+                    <Route path = "/about"  exact component = {About} />
+                        <Route path = "/projects" exact component = {Projects} />
+                        <Route path = "/projects/breakout" exact component = {Breakout} />
+                        <Route path = "/projects/chaos" exact component = {Chaos} />
                   
                    
               </Switch>
@@ -31,7 +39,8 @@ function App() {
 const Home = () => (
   <div>
     <div style = {{marginTop:"1.5%"}}>
-    <img src =  {ProfilePic} alt = "Me"  width = "20%" />  
+   
+    <img src={process.env.PUBLIC_URL + '/images/Edwin.jpg'} className = "responsive"  alt = "me"/> 
     <p>My names is Edwin.  I'm a <em>Dreamer</em> learning to code. </p>
     <p>I also teach math at Laredo College. </p>
 
