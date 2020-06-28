@@ -4,6 +4,8 @@ import About from './About';
 import Projects from './Projects/Projects';
 import Breakout from './Projects/BreakoutGame';
 import Chaos from './Projects/ChaosTriangle';
+import Bubble from './Projects/Bubble';
+import GameOfLife from './Projects/GameOfLife';
 
 import {HashRouter  as Router, Switch, Route, Redirect} from 'react-router-dom';
  
@@ -26,6 +28,8 @@ function App() {
                         <Route path = "/projects" exact component = {Projects} />
                         <Route path = "/projects/breakout" exact component = {Breakout} />
                         <Route path = "/projects/chaos" exact component = {Chaos} />
+                        <Route path = "/projects/bubble" exact component = {Bubble} />
+                        <Route path = "/projects/gol" exact component = {GameOfLife} />
                   
                    
               </Switch>

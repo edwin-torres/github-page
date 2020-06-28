@@ -161,7 +161,12 @@ nav {
   grid-gap: 10px;
 }
 
-
+.gol-grid-container {
+ 
+  display: flex;
+  justify-content: center;
+  
+}
 
 
 

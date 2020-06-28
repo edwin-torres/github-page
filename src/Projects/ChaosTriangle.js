@@ -181,7 +181,7 @@ function stop(){
       <canvas
         style={{
           size: "100%",
-          border: "10px solid #333030",
+          border: "10px solid black",
         }}
         ref={canvas}
         width= "1"

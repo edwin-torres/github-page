@@ -36,6 +36,22 @@ function Projects() {
                             <li >Chaos</li>
     </Link>
     </div>
+
+     
+    <div className = "Card">
+ 
+    <Link style = {navStyle} to = "/projects/bubble">
+                            <li >Bubble Sort</li>
+    </Link>
+    </div>
+    
+     
+    <div className = "Card">
+ 
+    <Link style = {navStyle} to = "/projects/gol">
+                            <li >Game of Life</li>
+    </Link>
+    </div>
     
   
    
