@@ -53,6 +53,14 @@ function Projects() {
     </Link>
     </div>
     
+    
+    <div className = "Card">
+ 
+    <Link style = {navStyle} to = "/projects/pokemon">
+                            <li >Catch a Pokemon</li>
+    </Link>
+    </div>
+    
   
    
      

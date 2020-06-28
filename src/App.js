@@ -6,6 +6,7 @@ import Breakout from './Projects/BreakoutGame';
 import Chaos from './Projects/ChaosTriangle';
 import Bubble from './Projects/Bubble';
 import GameOfLife from './Projects/GameOfLife';
+import Pokemon from './Projects/RandomPokemon';
 
 import {HashRouter  as Router, Switch, Route, Redirect} from 'react-router-dom';
  
@@ -30,6 +31,7 @@ function App() {
                         <Route path = "/projects/chaos" exact component = {Chaos} />
                         <Route path = "/projects/bubble" exact component = {Bubble} />
                         <Route path = "/projects/gol" exact component = {GameOfLife} />
+                        <Route path = "/projects/pokemon" exact component = {Pokemon} />
                   
                    
               </Switch>
