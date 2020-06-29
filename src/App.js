@@ -7,6 +7,7 @@ import Chaos from './Projects/ChaosTriangle';
 import Bubble from './Projects/Bubble';
 import GameOfLife from './Projects/GameOfLife';
 import Pokemon from './Projects/RandomPokemon';
+import GeneticAlgorithm from './Projects/GeneticAlgorithm';
 
 import {HashRouter  as Router, Switch, Route, Redirect} from 'react-router-dom';
  
@@ -32,6 +33,7 @@ function App() {
                         <Route path = "/projects/bubble" exact component = {Bubble} />
                         <Route path = "/projects/gol" exact component = {GameOfLife} />
                         <Route path = "/projects/pokemon" exact component = {Pokemon} />
+                        <Route path = "/projects/genalg" exact component = {GeneticAlgorithm} />
                   
                    
               </Switch>
@@ -47,7 +49,7 @@ const Home = () => (
     <div style = {{marginTop:"1.5%"}}>
    
     <img src={process.env.PUBLIC_URL + '/images/Edwin.jpg'} className = "responsive"  alt = "me"/> 
-    <p>My names is Edwin.  I'm a <em>Dreamer</em> learning to code. </p>
+    <p>My names is Edwin.  I'm learning how to code. </p>
     <p>I also teach math at Laredo College. </p>
 
     </div>

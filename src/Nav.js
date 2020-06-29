@@ -11,7 +11,10 @@ function Nav() {
 
   return (
     <nav>
-      <h3>LOGO</h3>
+        <div>
+          <a className = "link" href="https://github.com/edwin-torres" target="_blank"  rel = "noopener noreferrer">    <img className = "github" src={process.env.PUBLIC_URL + '/images/github.png'} alt = "github" height = "25" width = "25" /> </a> 
+   
+         </div>
 
       <ul className="nav-links">
         <Link style={navStyle} to="/home">
