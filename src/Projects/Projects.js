@@ -51,6 +51,18 @@ function Projects() {
               <li>Genetic Algorithm</li>
             </Link>
           </div>
+
+
+          <div className="Card">
+            <Link style={navStyle} to="/projects/sine">
+              <li>Sine Function</li>
+            </Link>
+          </div>
+
+
+
+
+
         </div>
       </div>
     </div>

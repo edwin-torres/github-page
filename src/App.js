@@ -8,6 +8,7 @@ import Bubble from './Projects/Bubble';
 import GameOfLife from './Projects/GameOfLife';
 import Pokemon from './Projects/RandomPokemon';
 import GeneticAlgorithm from './Projects/GeneticAlgorithm';
+import Sine from './Projects/Sine';
 
 import {HashRouter  as Router, Switch, Route, Redirect} from 'react-router-dom';
  
@@ -34,6 +35,7 @@ function App() {
                         <Route path = "/projects/gol" exact component = {GameOfLife} />
                         <Route path = "/projects/pokemon" exact component = {Pokemon} />
                         <Route path = "/projects/genalg" exact component = {GeneticAlgorithm} />
+                        <Route path = "/projects/sine" exact component = {Sine} />
                   
                    
               </Switch>
