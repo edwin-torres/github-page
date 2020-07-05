@@ -60,6 +60,14 @@ function Projects() {
           </div>
 
 
+          <div className="Card">
+            <Link style={navStyle} to="/projects/cost">
+              <li>Cost Matrix</li>
+            </Link>
+          </div>
+
+
+
 
 
 
