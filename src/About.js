@@ -5,7 +5,7 @@ import './App.css';
 function About() {
   return (
     <div>
-      <h1>About Page</h1>
+     <embed src={process.env.PUBLIC_URL + '/EdwinTorresNoInfo.pdf'} width="800px" height="1000px" />
      
     </div>
   );
