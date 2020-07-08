@@ -37,61 +37,86 @@
   }
 }
 
-
-
 p {
   margin: 0;
   color: Ivory;
-   font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 h1 {
   color: PaleTurquoise;
-  
 }
- 
 
- /* ////////////////////////NAV BAR /////////////////////////////*/
+/* ////////////////////////NAV BAR /////////////////////////////*/
 
-nav { 
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
- /* background: rgb(64, 127, 148); */
- background:black;
+  /* background: rgb(64, 127, 148); */
+  background: black;
   color: Ivory;
 }
 
-.link { color: Ivory; }  
-.link:hover { color: #ff5100; }  
+.link {
+  color: Ivory;
+}
+.link:hover {
+  color: #ff5100;
+}
 
+.link-card {
+  color: Black;
+  text-decoration: none;
+}
+.link-card:hover {
+  color: rgb(0, 174, 255);
+}
+
+.btn-card {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.btn-card button {
+  border-style: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: #30a7d7;
+  color: #fff;
+  font-size: 1em;
+}
+
+.btn-card button:hover {
+  background: #ff5100;
+}
 
 .nav-links {
-  width: 40%;
+  width: 10%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
 }
-.nav-links :hover { color: #ff5100; }  
- /* /////////////////////////Images ////////////////////////////////*/
- .responsive {
+.nav-links :hover {
+  color: #ff5100;
+}
+/* /////////////////////////Images ////////////////////////////////*/
+.responsive {
   width: 100%;
-  max-width: 400px;
+  max-width: 250px;
   height: auto;
 }
 
-
-
-
 /* ///////////////////////CARDS///////////////////////////////// */
- 
+
 .Card {
   /* background: rgba(185, 122, 50, 0.808); */
-  background: #FAEBD7;
+  background: #faebd7;
   border-radius: 10px;
-  
 }
 /* background: rgb(208, 255, 214); */
 
@@ -108,11 +133,9 @@ nav {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-
-
 .Card__types {
   display: flex;
-  justify-content: center;    
+  justify-content: center;
 }
 
 .Card__type {
@@ -133,23 +156,16 @@ nav {
 
 .Card__info {
   margin-left: 10px;
-  
 }
 
 .Card__data {
   padding-bottom: 10px;
-  
 }
 
 .Card__data .title {
   font-weight: 700;
   background: rgb(37, 63, 63);
-  
 }
-
-
-
-
 
 /* /////////////////////////////////GRID/////////////////////////////////// */
 
@@ -162,13 +178,9 @@ nav {
 }
 
 .gol-grid-container {
- 
   display: flex;
   justify-content: center;
-  
 }
-
-
 
 /* /////////////////////////////////BUTTON/////////////////////////////////// */
 
@@ -188,25 +200,21 @@ nav {
   font-size: 1.75em;
 }
 
- 
-.btn button:hover { background: #ff5100; }  
-
-
+.btn button:hover {
+  background: #ff5100;
+}
 
 /* //////////////////////////////POKEMON//////////////////////////// */
 
- 
 .Pokemon__Card {
   background: black;
   border-radius: 10px;
-  
 }
 
 .Pokemon__img {
   text-align: center;
 }
 .Pokemon__img img {
- 
   border: 10px solid rgb(10, 134, 218);
   border-radius: 25px;
   padding: 5px;
@@ -214,13 +222,10 @@ nav {
   max-width: 250px;
   height: auto;
 }
- 
- 
-
 
 .Pokemon__types {
   display: flex;
-  justify-content: center;    
+  justify-content: center;
   font-size: 2rem;
 }
 
@@ -242,27 +247,22 @@ nav {
 /* color: rgb(81, 255, 159); */
 .Pokemon__info {
   margin-left: 10px;
-  
 }
 
 .Pokemon__data {
   display: flex;
-  justify-content: center;   
-  
- 
+  justify-content: center;
 }
 
 .Pokemon__data .title {
   font-weight: 700;
-     
 }
 
 .Pokemon__detail {
-  
   padding: 5px 10px;
   margin: 10px 10px 10px 0;
   border-radius: 5px;
-  
+
   color: rgb(81, 255, 159);
 }
 
@@ -274,30 +274,23 @@ nav {
   color: rgb(17, 201, 201);
   font-weight: bold;
 }
-.responsive {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
-
 
 /* ////////////////////////////////ICONS//////////////////////////////////////////// */
 
-
-.github {
+.icon {
   padding: 20px;
   font-size: 30px;
   width: 100%;
-  max-width: 40px;
+  max-width: 25px;
   height: auto;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
+
   background-color: black;
 }
 
-.github:hover {
+.icon:hover {
   width: 100%;
-  max-width: 45px;
+  max-width: 40px;
   height: auto;
 }

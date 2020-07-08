@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from './Nav';
-import About from './About';
+ 
 import Projects from './Projects/Projects';
 import Breakout from './Projects/BreakoutGame';
 import Chaos from './Projects/ChaosTriangle';
@@ -28,8 +28,8 @@ function App() {
               from="/"
               to="/home"            
             />
-                    <Route path = "/home" exact component = {Home} />
-                    <Route path = "/about"  exact component = {About} />
+                        <Route path = "/home" exact component = {Home} />
+                   
                         <Route path = "/projects" exact component = {Projects} />
                         <Route path = "/projects/breakout" exact component = {Breakout} />
                         <Route path = "/projects/chaos" exact component = {Chaos} />
@@ -54,7 +54,7 @@ const Home = () => (
     <div style = {{marginTop:"1.5%"}}>
    
     <img src={process.env.PUBLIC_URL + '/images/Edwin.jpg'} className = "responsive"  alt = "me"/> 
-    <p>My names is Edwin.  I'm learning how to code. </p>
+    <p>My name is Edwin.  I'm learning how to code. </p>
     <p>I also teach math at Laredo College. </p>
 
     </div>

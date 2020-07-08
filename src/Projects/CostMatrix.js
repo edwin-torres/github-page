@@ -5,7 +5,7 @@ import "../App.css";
 const ROWS = 5;
 const COLUMNS = 8;
 
-let randomNumbers = []; ////////////////////Check this array..
+let randomNumbers = []; //Square Values
 let rowsArr = []; //Grid
 let matrix = []; //Stores the Cost
 let path = []; //Stores the Path
