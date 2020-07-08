@@ -96,7 +96,7 @@ nav {
 
 .nav-links {
   width: 10%;
-  display: flex;
+  
   justify-content: space-around;
   align-items: center;
   list-style: none;
@@ -107,7 +107,7 @@ nav {
 /* /////////////////////////Images ////////////////////////////////*/
 .responsive {
   width: 100%;
-  max-width: 250px;
+  max-width: 135px;
   height: auto;
 }
 

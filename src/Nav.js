@@ -41,49 +41,20 @@ function Nav() {
           />
         </a>
       </div>
-
+       
       <ul className="nav-links">
         <Link style={navStyle} to="/home">
           <li>Home</li>
         </Link>
-
+         
         <Link style={navStyle} to="/projects">
-          <li>Cool Stuff</li>
+          <li>Cool_Stuff</li>
         </Link>
       </ul>
+      
+
     </nav>
   );
 }
 
 export default Nav;
-
-export function ProjectNav() {
-  const navStyle = {
-    color: "white",
-  };
-
-  return (
-    <nav className="projects-nav">
-      <h3>ProjectNav</h3>
-
-      <ul className="nav-links">
-        <Link style={navStyle} to="/">
-          <li>Home</li>
-        </Link>
-
-        <Link style={navStyle} to="/projects/shop">
-          <li>Shop</li>
-        </Link>
-        <Link style={navStyle} to="/pokemon">
-          <li>Pokemon</li>
-        </Link>
-        <Link style={navStyle} to="/projects/breakout">
-          <li>breakout</li>
-        </Link>
-        <Link style={navStyle} to="/projects">
-          <li>Projects</li>
-        </Link>
-      </ul>
-    </nav>
-  );
-}
