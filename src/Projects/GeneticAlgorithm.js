@@ -30,22 +30,17 @@ function GeneticAlgorithm() {
   function runAlg(param) {
     targetPhrase = param;
     //////Sets the population size
+
     if (targetPhrase.length < 10) {
       populationSize = 250;
+    } else if (targetPhrase.length < 15) {
+      populationSize = 550;
+    } else if (targetPhrase.length < 25) {
+      populationSize = 1000;
+    } else if (targetPhrase.length < 35) {
+      populationSize = 2500;
     } else {
-      if (targetPhrase.length < 15) {
-        populationSize = 550;
-      } else {
-        if (targetPhrase.length < 25) {
-          populationSize = 1000;
-        } else {
-          if (targetPhrase.length < 35) {
-            populationSize = 2500;
-          } else {
-            populationSize = 5000;
-          }
-        }
-      }
+      populationSize = 5000;
     }
 
     let member = []; //array of members of the initial population
@@ -90,27 +85,20 @@ function GeneticAlgorithm() {
     phrasesArr.push(bestPhraseString);
 
     let time = 0;
-    ////used to determine how fast the best phrases evolve in the user's window
+
+    ////determine how fast the best phrases evolve in the user's window
     if (phrasesArr.length < 100) {
       time = 200;
+    } else if (phrasesArr.length < 500) {
+      time = 100;
+    } else if (phrasesArr.length < 1000) {
+      time = 25;
+    } else if (phrasesArr.length < 5000) {
+      time = 10;
+    } else if (phrasesArr.length < 25000) {
+      time = 5;
     } else {
-      if (phrasesArr.length < 500) {
-        time = 100;
-      } else {
-        if (phrasesArr.length < 1000) {
-          time = 25;
-        } else {
-          if (phrasesArr.length < 5000) {
-            time = 10;
-          } else {
-            if (phrasesArr.length < 25000) {
-              time = 5;
-            } else {
-              time = 1;
-            }
-          }
-        }
-      }
+      time = 1;
     }
 
     ////This obj is needed to stop the set inverval once the target phrase is reached using clearInterval
