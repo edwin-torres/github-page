@@ -13,11 +13,11 @@ function Curve() {
 
   useEffect(() => {
     play();
-    console.log("Distance MOUNTED");
+    console.log("Approximation MOUNTED");
 
     return () => {
       clear();
-      console.log("Distance UNMONUNTED");
+      console.log("Approximation UNMONUNTED");
     };
   });
 
