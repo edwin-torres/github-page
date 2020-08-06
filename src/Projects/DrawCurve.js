@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect} from "react";
 
 import "../App.css";
 
@@ -16,6 +16,7 @@ function Curve() {
     console.log("Distance MOUNTED");
 
     return () => {
+      clear();
       console.log("Distance UNMONUNTED");
     };
   });
