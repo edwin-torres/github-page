@@ -153,7 +153,7 @@ function Projects() {
             </Link>
             <a
               className="link-card"
-              href="https://github.com/edwin-torres/github-page/blob/master/src/Projects/Sine.js"
+              href="https://github.com/edwin-torres/github-page/blob/master/src/Projects/DrawCurve.js"
               target="_blank"
               rel="noopener noreferrer"
             >
