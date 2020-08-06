@@ -146,6 +146,26 @@ function Projects() {
               </div>
             </a>
           </div>
+
+          <div className="Card">
+            <Link style={navStyle} to="/projects/curve">
+              <li>Curve Approximation</li>
+            </Link>
+            <a
+              className="link-card"
+              href="https://github.com/edwin-torres/github-page/blob/master/src/Projects/Sine.js"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="btn-card">
+                <button>Code</button>
+              </div>
+            </a>
+          </div>
+
+
+
+
         </div>
       </div>
     </div>

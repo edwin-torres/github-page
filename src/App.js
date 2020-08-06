@@ -10,6 +10,7 @@ import Pokemon from './Projects/RandomPokemon';
 import GeneticAlgorithm from './Projects/GeneticAlgorithm';
 import Sine from './Projects/Sine';
 import Cost from './Projects/CostMatrix';
+import Curve from './Projects/DrawCurve';
 
 
 import {HashRouter  as Router, Switch, Route, Redirect} from 'react-router-dom';
@@ -26,7 +27,7 @@ function App() {
               <Redirect
               exact
               from="/"
-              to="/home"            
+              to="/projects"            
             />
                         <Route path = "/home" exact component = {Home} />
                    
@@ -39,6 +40,7 @@ function App() {
                         <Route path = "/projects/genalg" exact component = {GeneticAlgorithm} />
                         <Route path = "/projects/sine" exact component = {Sine} />
                         <Route path = "/projects/cost" exact component = {Cost} />
+                        <Route path = "/projects/curve" exact component = {Curve} />
                   
                    
               </Switch>
