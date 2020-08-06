@@ -12,6 +12,7 @@ function Curve() {
   let approxAreaRef = useRef();
 
   useEffect(() => {
+    
     play();
     console.log("Approximation MOUNTED");
 
@@ -22,16 +23,18 @@ function Curve() {
   });
 
   const play = () => {
+ 
     const cxt = canvas.current.getContext("2d");
-    canvas.current.width = window.innerWidth * 0.75;
+    canvas.current.width = window.innerWidth * 0.65;
 
-    canvas.current.height = window.innerHeight * 0.5;
+    canvas.current.height = window.innerHeight * 0.45;
     heigtRef.current = canvas.current.height;
-    window.addEventListener("resize", function () {
-      canvas.current.width = window.innerWidth * 0.75;
-      canvas.current.height = window.innerHeight * 0.5;
-      heigtRef.current = canvas.current.height;
-    });
+    // window.addEventListener("resize", function () {
+    //   clear();
+    //   // canvas.current.width = window.innerWidth * 0.75;
+    //   // canvas.current.height = window.innerHeight * 0.5;
+    //   // heigtRef.current = canvas.current.height;
+    // });
 
     //variables
     let painting = false;
@@ -51,6 +54,7 @@ function Curve() {
     canvas.current.addEventListener("mousemove", drawCurve);
 
     function drawCurve(e) {
+      
       if (!painting) {
         return;
       }
@@ -262,7 +266,7 @@ function Curve() {
   return (
     <div>
       <div>
-        <h1>Curve Approximation</h1>
+       
         <div className="grid-container">
           <div className="Card">
             <h2>Approximate Length</h2>
