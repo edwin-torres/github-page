@@ -128,7 +128,7 @@ function Bubble() {
             This is a visualization of the{" "}
             <a
               className="link"
-              href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+              href="https://en.wikipedia.org/wiki/Bubble_sort"
               target="_blank"
               rel="noopener noreferrer"
             >

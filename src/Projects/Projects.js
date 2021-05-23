@@ -16,6 +16,24 @@ function Projects() {
      <br></br> <br></br>
       <div>
         <div className="grid-container">
+
+        <div className="Card">
+            <Link style={navStyle} to="/projects/dijkstra">
+              <li>Dijkstra's Algorithm</li>
+            </Link>
+
+            <a
+              className="link-card"
+              href="https://github.com/edwin-torres/github-page/blob/master/src/Projects/CostMatrix.js"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="btn-card">
+                <button>Code</button>
+              </div>
+            </a>
+          </div>
+
           <div className="Card">
             <Link style={navStyle} to="/projects/cost">
               <li>Cost Matrix</li>

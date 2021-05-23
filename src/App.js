@@ -11,6 +11,7 @@ import GeneticAlgorithm from './Projects/GeneticAlgorithm';
 import Sine from './Projects/Sine';
 import Cost from './Projects/CostMatrix';
 import Curve from './Projects/DrawCurve';
+import DijkstraVisualization from './Projects/DijkstraVisualization';
 
 
 import {HashRouter  as Router, Switch, Route, Redirect} from 'react-router-dom';
@@ -41,6 +42,7 @@ function App() {
                         <Route path = "/projects/sine" exact component = {Sine} />
                         <Route path = "/projects/cost" exact component = {Cost} />
                         <Route path = "/projects/curve" exact component = {Curve} />
+                        <Route path = "/projects/dijkstra" exact component = {DijkstraVisualization} />
                   
                    
               </Switch>
