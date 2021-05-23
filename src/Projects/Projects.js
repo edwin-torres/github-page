@@ -24,7 +24,7 @@ function Projects() {
 
             <a
               className="link-card"
-              href="https://github.com/edwin-torres/github-page/blob/master/src/Projects/CostMatrix.js"
+              href="https://github.com/edwin-torres/github-page/blob/master/src/Projects/DijkstraVisualization.jsx"
               target="_blank"
               rel="noopener noreferrer"
             >
